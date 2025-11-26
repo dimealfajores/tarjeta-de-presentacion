@@ -202,7 +202,7 @@ footer p {
   }
   /* 🔽 Los botones se contraen en móvil */
   .btn {
-    width: 380px;
+    width: 350px;
     height: 55px;
     font-size: 1rem;
     border-radius: 10px;

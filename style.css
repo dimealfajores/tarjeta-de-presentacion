@@ -66,7 +66,7 @@ parrafo (p) donde esta una breve descripción de la empresa*/
 .contenedor-2 p {
     margin: 5px;
     line-height: 2;
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: center;
 }
 /* iconos de presentación de redes sociales*/

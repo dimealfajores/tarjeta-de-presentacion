@@ -11,12 +11,16 @@ body {
 favicon con el titulo de la empresa*/
 header {
     background-color: #51d7c9;
+    background-image: url("imagen1.JPG");  /* ← agrega la imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 60px 0 40px 0;
-
+    padding: 300px 0 280px 0
 }
 
    /*en este contenedor contendra el favicon y el titulo y se encargara de que estas dos queden centrados en la pagina principal*/
@@ -215,16 +219,6 @@ footer p {
   from { transform: translateY(-10%); }
   to   { transform: translateY(100%); }
 }
-
-.servicio-btn svg path,
-.servicio-btn svg circle {
-  transition: 0.2s;
-}
-
-.servicio-btn:hover svg path,
-.servicio-btn:hover svg circle {
-  fill: #b71c1c;
-}
 /*pantallas pequeñas cambian a columnas*/
 /* RESPONSIVE PARA CELULARES */
 @media (max-width: 600px) {
@@ -290,5 +284,17 @@ footer p {
 .catalogo {
     background-color: #E53935;
   }
+header {
+    background-color: #51d7c9;
+    background-image: url("imagen1.JPG");  /* ← agrega la imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0 80px 0
+}
 }

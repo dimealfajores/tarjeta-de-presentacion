@@ -3,7 +3,7 @@ box-sizing: border-box;
 }
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #f8f8f8;
     padding: 0;
 }
@@ -102,36 +102,48 @@ se dara la ubicación y forma de los botones que llevaran a las diferentes redes
 /* Sección de estilo de botones*/
 .btn {
     display:  flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    width: 550px;
+    width: 700px;
     height: 75px;
     font-size: 1.5rem;
     font-weight: bold;
     color: white;
     border: none;
-    border-radius: 12px;
+    border-radius: 60px;
     text-decoration: none;
     transition: transform 0.2s, opacity 0.2s;
+    background-color: #C97F7F;
 }
-
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255,255,255,0.6);
+}
 .btn img {
-  width: 32px;
-  height: 32px;
+  position: absolute;
+  left: 20px;
+  width: 45px;
+  height: 45px;
   object-fit: contain;
   background-color: white; /* opcional para mejor visibilidad */
   border-radius: 50%;
   padding: 1px;
+  filter: grayscale(100%);
 }
+/*
   btn:nth-child(2) { background-color: #C13584; } /* Instagram */
+  /*
   .btn:nth-child(1) { background-color: #25D366; } /* WhatsApp */
+  /*
   .btn:nth-child(3) { background-color: #1877F2; } /* Facebook */
-  
+  /*
   .btn:nth-child(5) { background-color: #000000; } /* TikTok */
+  /*
   .btn:nth-child(6) { background-color: #0088cc; } /* Web */
 
-/*efecto de botones*/
+/*efecto de botones
 .btn:hover {
     transform: scale(1.05);
     opacity: 0.9;
@@ -142,6 +154,7 @@ se dara la ubicación y forma de los botones que llevaran a las diferentes redes
 .correo { background-color: #ff9800; }
 .tiktok { background-color: #000; }
 .web { background-color: #0088cc; }
+*/
 
 footer {
     background-color: #51d7c9;
@@ -162,6 +175,17 @@ footer p {
     width: 180px;
     height: 180px;
   }
+@media (max-width: 600px) {
+  .btn {
+    position: relative;
+    justify-content: center; /* el texto queda centrado */
+  }
+
+  .btn img {
+    position: absolute;
+    left: 20px;   /* mueve el ícono a la izquierda */
+  }
+}
 
   .contenedor-2 .imagen-logo {
     width: 250px;
@@ -178,7 +202,7 @@ footer p {
   }
   /* 🔽 Los botones se contraen en móvil */
   .btn {
-    width: 200px;
+    width: 380px;
     height: 55px;
     font-size: 1rem;
     border-radius: 10px;
@@ -186,8 +210,9 @@ footer p {
   }
 
   .btn img {
-    width: 25px;
-    height: 25px;
+    filter: grayscale(100%);
+    width: 40px;
+    height: 40px;
   }
 
   /* Íconos más pequeños */

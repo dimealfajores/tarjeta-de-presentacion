@@ -192,10 +192,8 @@ footer p {
   }
 
   .corazon-btn {
-  justify-content: center;
-  text-align: center;
-  padding-left: 0;
-  
+  position: relative;
+  overflow: hidden;
 }
 .corazon-btn svg{
   left: 20px;

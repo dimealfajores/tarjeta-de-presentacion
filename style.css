@@ -192,8 +192,17 @@ footer p {
   }
 
   .corazon-btn {
-  position: relative;
-  overflow: hidden;
+  justify-content: center;
+  text-align: center;
+  padding-left: 0;
+  
+}
+.corazon-btn svg{
+  left: 20px;
+}
+
+.corazon-btn span{
+  margin-left: 30px; /* compensa visualmente el peso del ícono */
 }
 
 .corazon-btn::before,

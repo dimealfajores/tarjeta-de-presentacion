@@ -191,13 +191,13 @@ footer p {
     background-color: #C97F7F;
   }
 
-  .nieve-btn {
+  .corazon-btn {
   position: relative;
   overflow: hidden;
 }
 
-.nieve-btn::before,
-.nieve-btn::after {
+.corazon-btn::before,
+.corazon-btn::after {
   content: "";
   position: absolute;
   top: -20%;
@@ -213,9 +213,9 @@ footer p {
 
 
 /* Copos capa 2 */
-.nieve-btn::after {
-  background-image: url("imagens.webp");
-  animation-duration: 10s;
+.corazon-btn::after {
+  background-image: url("corazon_1-removebg-preview.png");
+  animation-duration: 2s;
 }
 
 @keyframes nevar {
